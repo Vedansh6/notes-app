@@ -2,7 +2,7 @@ body{
     background-color: #1f2123;
     
 }
-#exampleFormControlTextarea1{
+#textarea{
     
     background-color: #1f2123;
     color: white;
@@ -13,6 +13,10 @@ body{
     border-style: none;
     
 }
-#exampleFormControlTextarea1 ::-webkit-scrollbar{
+#textarea ::-webkit-scrollbar{
 all: none;
+}
+#manage{
+    display: flex;
+    justify-content: flex-end;
 }
