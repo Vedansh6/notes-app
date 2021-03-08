@@ -20,3 +20,7 @@ all: none;
     display: flex;
     justify-content: flex-end;
 }
+#notes div{
+    height: 4.5rem;
+    overflow: hidden;
+}

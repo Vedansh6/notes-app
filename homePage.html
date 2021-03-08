@@ -8,35 +8,61 @@
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+
     <link rel="stylesheet" href="homePage.css">
 </head>
 
 <body>
     <section class="container">
         <div class="row">
-            <div class="col-4 text-light text-justify" id="notes">
+            <div class="col-4 text-light text-justify border-end" id="notes">
                 <div class="text-center mt-2" id="head">
                     Notes
                 </div>
             </div>
             <div class="col-8 text-light">
-                
+
                 <div class="" id="manage">
-                    <a class="btn btn-primary mt-2" id="update" href="">Update</a>
+                    <a class="btn btn-primary mt-2 mx-3" id="update" href="">Update</a>
                     <a class="btn btn-primary mt-2  mx-3" id="add" href="">Add</a>
-                    <a class="btn btn-primary mt-2 mx-3" id="aelete" href="">Delete</a>
+                    <a class="btn btn-primary mt-2 mx-3" id="delete" href="">Delete</a>
                 </div>
-                
+
                 <div class="mb-3">
                     <label for="textarea" class="form-label"></label>
                     <textarea class="form-control" id="textarea" rows="18" placeholder="Note Here!"></textarea>
-                  </div>
-                 
+                </div>
+
             </div>
 
         </div>
 
     </section>
+
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyDD59Occ_bk2hxyHJsUW5hNw7MWwVwJ7zU",
+            authDomain: "notes-app-b0d97.firebaseapp.com",
+            projectId: "notes-app-b0d97",
+            storageBucket: "notes-app-b0d97.appspot.com",
+            messagingSenderId: "213678201640",
+            appId: "1:213678201640:web:5ca78ecc4bb86136fcce1d",
+            measurementId: "G-327ZP5DDFV"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots : true});
+        
+    </script>
+
+
+
+
     <script src="homePage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
