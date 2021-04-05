@@ -11,27 +11,55 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
     <link rel="stylesheet" href="homePage.css">
 </head>
 
 <body>
     <section class="container">
         <div class="row">
-            <div class="col-4 text-light text-justify border-end" id="notes">
-                <div class="text-center mt-2" id="head">
+            
+            <div class="col-4 text-light text-justify border-end">
+                <section class="text-center mt-2 mb-4" id="head">
                     Notes
+                </section>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" autocomplete="off" placeholder="Search" id="search">
+                    <button type="submit" id="searchBtn" ></button>
+                  </form>
+                <div id="notes">
+
                 </div>
             </div>
             <div class="col-8 text-light">
-
-                <div class="" id="manage">
+                
+                <div class="border-bottom" id="manage">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle mt-2 mx-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Font
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          
+                          <li><a class="dropdown-item"  onclick="font('cursive')">Cursive</a></li>
+                          <li><a class="dropdown-item"  onclick="font('monospace')">Monospace</a></li>
+                          <li><a class="dropdown-item"  onclick="font('fantasy')">Fantasy</a></li>
+                          <li><a class="dropdown-item"  onclick="font('serif')">Serif</a></li>
+                          <li><a class="dropdown-item"  onclick="font('sans-serif')">Sans Serif</a></li>
+                        </ul>
+                      </div>
+                        
                     <a class="btn btn-primary mt-2 mx-3" id="update" href="">Update</a>
                     <a class="btn btn-primary mt-2  mx-3" id="add" href="">Add</a>
+                    <a class="btn btn-primary mt-2  mx-3" id="new" href="">New</a>
+                    <a class="btn btn-primary mt-2  mx-3" id="logOut" href="">Log Out</a>
                     <a class="btn btn-primary mt-2 mx-3" id="delete" href="">Delete</a>
-                </div>
+                    <a class="btn btn-primary mt-2 mx-3" id="date" href="">i</a>
 
-                <div class="mb-3">
+                    <span id="dateDis"></span>
+                </div>
+                
+                <div class="">
                     <label for="textarea" class="form-label"></label>
                     <textarea class="form-control" id="textarea" rows="18" placeholder="Note Here!"></textarea>
                 </div>
@@ -56,14 +84,16 @@
         
         firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();
+        const auth = firebase.auth();
         db.settings({timestampsInSnapshots : true});
         
     </script>
 
 
 
-
+    
     <script src="homePage.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
