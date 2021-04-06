@@ -23,7 +23,7 @@
         <div class="row text-light text-center align-items-center vh-100" id="input">
 
             <div class="col-md-6">
-                <div class="text-light h2 text-center" id="brand">Noteit</div>
+                <div class="text-light h2 text-center" onclick="land()" id="brand">Noteit</div>
                 <form action="homePage.html" class="" id="loginForm">
                     <div class="">
                         <label for="inputEmail" class="form-label">Email address</label>
@@ -33,13 +33,14 @@
                         <label for="inputPassword" class="form-label">Password</label>
                         <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                     </div>
+                    <input class="mt-2" type="checkbox" onclick="myFunction()">Show Password
                     <div class="mt-3">
-                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <button type="submit" class="btn btn-primary lbtn">Log In</button>
                     </div>
                 </form>
                 <div id="altlogin">
                     <div>Don't Have An Account!</div>
-                    <div><a class="btn btn-primary mt-2" id="signup" href="signup.html">Sign Up</a></div>
+                    <div><a class="btn btn-primary mt-2 lbtn" id="signup" href="signup.html">Sign Up</a></div>
                 </div>
             </div>
             <div class="col-md-6">

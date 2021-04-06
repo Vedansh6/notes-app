@@ -11,3 +11,26 @@ body{
         padding-top: 5rem;
     }
 }
+.lbtn{
+    border-radius: 4px;
+    background-color: #3361cc;
+    width: 7rem;
+    font-weight: 400;
+}
+
+#ss{
+    margin-top: 3rem;
+    width: 60rem;
+    height: 30rem;
+}
+#ssp{
+    letter-spacing: 0.2rem;
+    width: 30rem;
+    margin-left: 18rem;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+}

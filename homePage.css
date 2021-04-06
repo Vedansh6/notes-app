@@ -16,14 +16,38 @@ body::-webkit-scrollbar{
     border-style: none;
     
 }
+
+
 #textarea::-webkit-scrollbar{
 all: none;
 }
+#new, #delete, #logOut, #date{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 1px;
+  
+  padding: 0px 12px;
+  
+  
+  line-height: 38px;
+  
+  background: #4dbecf;
+  border-radius: 3px;
+  
+  
+  
+ 
+  }
+  
 #manage{
-    display: flex;
-    justify-content: flex-end;
+    height: 4.5rem;
 }
 
+#delete{
+    margin-left: 15rem;
+}
 #notes{
     height: 87vh;
     overflow: hidden;
@@ -40,7 +64,7 @@ all: none;
 
 #manage span{
     position: absolute;
-    top: 3rem;
+    top: 4.5rem;
     right: 2rem;;
 }
 #dateDis{
@@ -56,5 +80,18 @@ all: none;
 #searchBtn{
     margin-bottom: 1rem;
 }
+#head{
+    padding: 1px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 22px;
+}
 
-
+#mess{
+    position: absolute;
+    text-align: center;
+    top: 17rem;
+    right: 12rem;
+    width: 20rem;
+}

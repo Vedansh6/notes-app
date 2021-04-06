@@ -4,7 +4,7 @@ background-color: #1f2123;
 }
 
 
-#form{
+#loginForm{
     margin-bottom: 2rem;
 }
 #altlogin{
@@ -12,4 +12,10 @@ background-color: #1f2123;
 }
 #brand{
     margin-bottom: 6rem;
+    cursor: pointer;
+    letter-spacing: 0.5rem;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.lbtn{
+    width: 7rem;
 }

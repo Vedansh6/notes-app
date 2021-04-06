@@ -9,6 +9,10 @@ function myFunction() {
     }
   }
 
+  function land(){
+    window.location.href = 'landingPage.html';
+  }
+
 signup.addEventListener('submit', (e) =>{
 
     e.preventDefault();
