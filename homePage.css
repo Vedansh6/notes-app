@@ -93,7 +93,7 @@ all: none;
     text-align: center;
     top: 17rem;
     right: 12rem;
-    width: 20rem;
+    width: 25rem;
 }
 @media(max-width :776px)
 {
