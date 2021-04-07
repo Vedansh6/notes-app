@@ -186,7 +186,7 @@ searchText.addEventListener('input', function (ev) {
     })
     let searchValue = searchText.value;
     notesArr.forEach((note) => {
-        if (note.innerText.match(searchValue) == -1)
+        if (note.innerText.search(searchValue) == -1)
             note.hidden = true;
 
     })
