@@ -8,13 +8,15 @@ login.addEventListener('submit', (e) =>{
     auth.signInWithEmailAndPassword(email, password).then(cred => {
         window.location.href = 'homePage.html';
         
-    })
+    }).catch(err => {
+        window.alert(err.message);
+      })
     
     
 });
 
 function land(){
-    window.location.href = 'landingPage.html';
+    window.location.href = 'index.html';
   }
 
 function myFunction() {

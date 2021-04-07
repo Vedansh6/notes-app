@@ -18,3 +18,9 @@ body{
     .lbtn{
         width: 7rem;
     }
+    @media(max-width :776px){
+        #main{
+            display: none;
+    
+        }
+    }

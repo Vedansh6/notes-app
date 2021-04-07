@@ -95,3 +95,12 @@ all: none;
     right: 12rem;
     width: 20rem;
 }
+@media(max-width :776px)
+{
+    #delete{
+        margin-left: 0rem;
+    }
+    #mess{
+        display: none;
+    }
+}

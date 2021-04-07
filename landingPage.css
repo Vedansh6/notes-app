@@ -5,12 +5,7 @@ body{
 #main{
     padding-top: 5.5rem;
 }
-@media(max-width :776px)
-{
-    #catch{
-        padding-top: 5rem;
-    }
-}
+
 .lbtn{
     border-radius: 4px;
     background-color: #3361cc;
@@ -28,9 +23,28 @@ body{
     width: 30rem;
     margin-left: 18rem;
 }
+#ssl{
+    letter-spacing: 0.2rem;
+    width: 35rem;
+    margin-left: 15rem;
+}
+
 #footer{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
     
+}
+@media(max-width :776px)
+{
+    #catch{
+        padding-top: 5rem;
+    }
+    #ss{
+        display: none;
+    }
+    #ssp{
+        display: none;
+    
+}
 }

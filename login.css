@@ -19,3 +19,9 @@ background-color: #1f2123;
 .lbtn{
     width: 7rem;
 }
+@media(max-width :776px){
+    #main{
+        display: none;
+
+    }
+}

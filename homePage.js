@@ -11,7 +11,7 @@ let searchText = document.querySelector('#search');
 let dateBtn = document.querySelector('#date');
 let dateDis = document.querySelector('#dateDis');
 let mess = document.querySelector('#mess')
-newBtn.hidden = false;
+newBtn.hidden = true;
 
 dateBtn.hidden = true;
 deleteBtn.hidden = true;
@@ -36,7 +36,7 @@ auth.onAuthStateChanged(function (user) {
         db.collection('note1').where('uid', '==', id).orderBy('date').get().then((snapshot) => {
             snapshot.docs
                 .forEach((doc) => {
-
+                    console.log(user.uid);
                     let newDiv = document.createElement('div');
                     newDiv.innerText = doc.data().notes;
                     let dateInput = doc.data().date;

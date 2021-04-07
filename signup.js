@@ -10,7 +10,7 @@ function myFunction() {
   }
 
   function land(){
-    window.location.href = 'landingPage.html';
+    window.location.href = 'index.html';
   }
 
 signup.addEventListener('submit', (e) =>{
@@ -21,6 +21,8 @@ signup.addEventListener('submit', (e) =>{
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
         window.location.href = 'homePage.html';
         
+    }).catch(err => {
+      window.alert(err.message);
     })
     
     
